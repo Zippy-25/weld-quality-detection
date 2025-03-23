@@ -1,4 +1,5 @@
 WELD QUALITY DETECTION:
+
 This project detects welding defects using a “YOLOv8 model” running on a “Raspberry Pi 3B+”, which captures an image, runs inference, and sends results to a “Windows system” via sockets. The Windows system then provides real-time “audio feedback” in both “English and Tamil”.
 
 Project Overview
@@ -6,9 +7,11 @@ Project Overview
 - “Model”: YOLOv8 (`best_100.pt`)
 - “Communication”: Socket programming (Raspberry Pi → Windows)
 - “Audio Output”: English (`pyttsx3`) & Tamil (`gTTS`)
-  
-![Screenshot 2025-03-23 171141](https://github.com/user-attachments/assets/658a8dc1-735a-417e-84cf-ac638af5396b)
 
+Datasheet used for training
+ https://www.kaggle.com/code/muhammadfaizan65/welding-defect-object-detection-using-yolov8
+using yolov8 model
+  https://github.com/ultralytics/ultralytics
 
 1. Raspberry Pi captures an image and runs “YOLOv8” inference.
 2. The detected results (e.g., *Good Weld, Bad Weld, Defect*) are “sent to Windows” via sockets.
