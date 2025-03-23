@@ -6,18 +6,7 @@ Project Overview
 - “Model”: YOLOv8 (`best_100.pt`)
 - “Communication”: Socket programming (Raspberry Pi → Windows)
 - “Audio Output”: English (`pyttsx3`) & Tamil (`gTTS`)
-
- Project Structure
-weld-quality-detection/
-│── raspberrypi_code/      # Code running on Raspberry Pi
-│   ├── detection.py       # Runs YOLO inference and sends results
-│── windows_code/          # Code running on Windows
-│   ├── audio.py           # Receives results & plays audio feedback
-│── models/
-│   ├── best_100.pt        # YOLOv8 trained model
-│── results/               # Detected images (optional)
-│── requirements.txt       # Dependencies for installation
-│── README.md              # Documentation
+![Screenshot 2025-03-23 171141](https://github.com/user-attachments/assets/658a8dc1-735a-417e-84cf-ac638af5396b)
 
 1. Raspberry Pi captures an image and runs “YOLOv8” inference.
 2. The detected results (e.g., *Good Weld, Bad Weld, Defect*) are “sent to Windows” via sockets.
